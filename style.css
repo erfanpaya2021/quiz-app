@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+:root {
+  --bodyColor: #f1faee;
+  --primaryColor: #1d3557;
+  --lightenPrimaryColor: #457b9d;
+  --secondaryColor: #a8dadc;
+  --whiteColor: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: var(--bodyColor);
+  color: var(--primaryColor);
+}
+
+/* quiz app */
+.quiz-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.quiz-app__wrapper {
+  flex: 0 1 30rem;
+  padding: 1.5rem;
+}
+
+.quiz-app__header {
+  padding: 1rem 0;
+  border-bottom: .2rem solid var(--lightenPrimaryColor);
+}
+
+.quiz-app__header h1 {
+  font-size: 2.2rem;
+}
+
+.quiz-app__body {
+  padding: 1rem 0;
+}
+
+.quiz-app__question {
+  margin-bottom: 2rem;
+  height: 4rem;
+  background: var(--lightenPrimaryColor);
+}
+
+.quiz-app__question h2 {
+  font-size: 1.6rem;
+}
+
+.quiz-app__option {
+ display: flex;
+ align-items: stretch;
+ height: 3.5rem;
+ margin-bottom: 1.6rem;
+ box-shadow: 0 0 .4rem rgba(0,0,0,.4);
+ cursor: pointer;
+}
+
+.quiz-app__option:hover p {
+  background-color: rgba(0,0,0,.05);
+}
+
+.quiz-app__option span {
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--bodyColor);
+  background-color: var(--lightenPrimaryColor);
+  width: 3.5rem;
+  padding: 1rem;
+}
+
+.quiz-app__option p {
+  flex: 1;
+  font-size: 1.1rem;
+  background-color: var(--whiteColor);
+  padding: 0.4rem;
+}
+
+.quiz-app__submit button {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .15rem;
+  background-color: var(--lightenPrimaryColor);
+  color: var(--whiteColor);
+  height: 4rem;
+  width: 10rem;
+  outline: none;
+  border: none;
+  padding: 1rem 2rem;
+  opacity: .9;
+  cursor: pointer;
+}
+
+.quiz-app__submit button:hover {
+  opacity: 1;
+}
