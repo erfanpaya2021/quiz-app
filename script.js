@@ -58,12 +58,17 @@ function showResult() {
     if (selctedOption) {
       const slectedText = opt.lastElementChild.innerText;
       opt.classList.remove("selected");
-      if (slectedText === correct) {
-        opt.lastElementChild.style.backgroundColor = "#08e765";
-      } else {
+      if (slectedText !== correct) {
         opt.lastElementChild.style.backgroundColor = "#d61c45";
+      } else {
+        opt.lastElementChild.style.backgroundColor = "#08e765";
+      }
+    } else {
+      if (opt.lastElementChild.innerText === correct) {
+        opt.lastElementChild.style.backgroundColor = "#08e765";
       }
     }
+
     alert.classList.add("active");
     setTimeout(function () {
       window.location.reload();

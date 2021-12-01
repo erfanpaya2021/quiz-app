@@ -128,19 +128,44 @@ body {
 
 .alert.active {
   position: fixed;
-  top: 10%;
+  top: 5%;
   left: 50%;
   z-index: 2;
   text-align: center;
   font-size: 1.8rem;
   font-weight: bold;
-  line-height: 8rem;
-  background-color: var(--whiteColor);
+  line-height: 6rem;
+  background-color: #71b5ec;
   width: 40rem;
-  min-height: 8rem;
+  min-height: 6rem;
   padding: 1rem;
   border-radius: 1rem;
   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.05);
-  transform: translate(-50%, -10%);
+  transform: translate(-50%, -5%);
+}
 
+@media (max-width: 768px) {
+  .quiz-app__header h1 {
+    font-size: 1.8rem;
+  }
+
+  .quiz-app__question h2 {
+    font-size: 1.4rem;
+  }
+
+  .quiz-app__option p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  .quiz-app__submit button {
+    font-size: 1.1rem;
+  }
+
+  .alert.active {
+    font-size: 1.4rem;
+    line-height: 4rem;
+    width: 30rem;
+    min-height: 4rem;
+  }
 }
